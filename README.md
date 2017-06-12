@@ -17,9 +17,6 @@
 2. Fetch data from MySql using Jquery and PHP to realize a real time auto completion feature of a searching engine on the web browser.
 
 
-###### Snapshot of Project
-
-
 
 
 ### Project2: PageRank
@@ -30,14 +27,16 @@
 3. Visualized the social network Graph based on the resulting PageRank matrix through Node.js.
 
 
-###### Snapshot of Project
-
 ###### Link to Data source
 ```
 http://socialcomputing.asu.edu/datasets/Twitter
 ```
 ### Project3: Movie Recommendation System
+###### Description
 
+1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 1 millions users and 1 million movies.
+2. Merged the two matrices using a Object-based collaborative filtering algorithm to compute the movie recommendation list.
+3. Realized the algorithm by connecting 4 separate Mapreduce jobs and deployed them on AWS EMR cluster.
 
 
 
