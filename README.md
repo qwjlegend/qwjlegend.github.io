@@ -4,9 +4,9 @@
 
 | Project | Link | Code |
 |-|-|-|
-| AutoComplete | [Visualization for AutoComplete](http://54.215.249.110/autocomplete)| [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/AutoComplete) |
-| PageRank |[Visualization for PageRank](http://54.215.249.110/pagerank_search) | [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/PageRank) |
-| Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/RecommenderSystem)|
+| AutoComplete | [Visualization for AutoComplete](http://54.215.249.110/autocomplete)| [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/AutoComplete) |
+| PageRank |[Visualization for PageRank](http://54.215.249.110/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
+| Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/RecommenderSystem)|
 
 ### Project1: AutoComplete
 
