@@ -6,7 +6,7 @@
 |-|-|-|
 | AutoComplete | [Visualization for AutoComplete](http://54.215.249.110/autocomplete)| [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/AutoComplete) |
 | PageRank |[Visualization for PageRank](http://54.215.249.110/pagerank_search) | [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/PageRank) |
-| Movie Recommendation | [Visualization for Movie Recommendation] |
+| Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/myBigDataProjects/tree/master/RecommenderSystem)|
 
 ### Project1: AutoComplete
 
@@ -34,9 +34,9 @@ http://socialcomputing.asu.edu/datasets/Twitter
 ### Project3: Movie Recommendation System
 ###### Description
 
-1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 1 millions users and 1 million movies.
-2. Merged the two matrices using a Object-based collaborative filtering algorithm to compute the movie recommendation list.
-3. Realized the algorithm by connecting 4 separate Mapreduce jobs and deployed them on AWS EMR cluster.
+1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 1 million users and 1 million movies.
+2. Merged the two matrices using a Item-based collaborative filtering algorithm to compute the movie recommendation list.
+3. Realized the algorithm by connecting 5 separate Mapreduce jobs and deployed them on AWS EMR cluster.
 
 
 
