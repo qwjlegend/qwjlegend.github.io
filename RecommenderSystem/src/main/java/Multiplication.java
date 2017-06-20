@@ -53,6 +53,8 @@ public class Multiplication {
 				throws IOException, InterruptedException {
 			//key = movieB value = <movieA=relation, movieC=relation... userA:rating, userB:rating...>
 			//collect the data for each movie, then do the multiplication
+			
+			//can use map instead of two lists
 			List<String> movieList =new ArrayList<String>();
 			List<String> userList=new ArrayList<String>();
 			

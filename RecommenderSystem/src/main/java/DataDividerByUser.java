@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -14,7 +15,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class DataDividerByUser {
-	public static class DataDividerMapper extends Mapper<LongWritable, Text, IntWritable, Text> {
+	public static class DataDividerMapper extends Mapper<LongWritable, Text, Text, Text> {
 
 		// map method
 		@Override
@@ -25,22 +26,22 @@ public class DataDividerByUser {
 			String user = line[0];
 			String movie = line[1];
 			String rating = line[2];
-			context.write(new IntWritable(Integer.parseInt(user)), new Text(movie + ":" + rating));
+			context.write(new Text(user), new Text(movie + ":" + rating));
 			
 		}
 	}
 
-	public static class DataDividerReducer extends Reducer<IntWritable, Text, IntWritable, Text> {
+	public static class DataDividerReducer extends Reducer<Text, Text, Text, Text> {
 		// reduce method
 		@Override
-		public void reduce(IntWritable key, Iterable<Text> values, Context context)
+		public void reduce(Text key, Iterable<Text> values, Context context)
 				throws IOException, InterruptedException {
 			//merge data for one user
 			List<String> lst = new ArrayList<String>();
 			for (Text val: values){
 				lst.add(val.toString());
 			}
-			String outVal = String.join(",", lst);
+			String outVal = StringUtils.join(lst,",");
 			context.write(key, new Text(outVal));
 		}
 	}
@@ -57,7 +58,7 @@ public class DataDividerByUser {
 
 		job.setInputFormatClass(TextInputFormat.class);
 		job.setOutputFormatClass(TextOutputFormat.class);
-		job.setOutputKeyClass(IntWritable.class);
+		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 
 		TextInputFormat.setInputPaths(job, new Path(args[0]));

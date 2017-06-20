@@ -34,9 +34,11 @@ http://socialcomputing.asu.edu/datasets/Twitter
 ### Project3: Movie Recommendation System
 ###### Description
 
-1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 1 million users and 1 million movies.
-2. Merged the two matrices using a Item-based collaborative filtering algorithm to compute the movie recommendation list.
-3. Realized the algorithm by connecting 5 separate Mapreduce jobs and deployed them on AWS EMR cluster.
-
+1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 480k users, 17k movies and over 100 million ratings.
+2. Merged the two matrices using a Item-based collaborative filtering algorithm to compute the movie recommendation list and deployed the jobs on AWS Hadoop cluster.
+###### Link to Data source
+```
+http://academictorrents.com/details/9b13183dc4d60676b773c9e2cd6de5e5542cee9a
+```
 
 

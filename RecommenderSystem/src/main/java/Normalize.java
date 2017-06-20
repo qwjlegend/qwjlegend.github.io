@@ -37,6 +37,11 @@ public class Normalize {
                 throws IOException, InterruptedException {
             //key = movieA, value=<movieB:relation, movieC:relation...>
             //normalize each unit of co-occurrence matrix
+        	
+        	//Q:when there is a large key, will it result in OOM??
+    		//A:1.add combiner on the mapper side;2. custom partitioner class 3.sharding? 
+        	
+        	//can use map instead of two lists
         	List<String> movieList = new ArrayList<String>();
         	List<Integer> relation = new ArrayList<Integer>();
         	int sum = 0;
@@ -54,7 +59,7 @@ public class Normalize {
         		context.write(new Text(outKey), new Text(outVal));
         	}
         	
-        	
+        	 
         }
     }
 
