@@ -4,9 +4,19 @@
 
 | Project | Link | Code |
 |-|-|-|
-| AutoComplete | [Visualization for AutoComplete](http://54.215.249.110/autocomplete)| [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/AutoComplete) |
-| PageRank |[Visualization for PageRank](http://54.215.249.110/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
+| AutoComplete | [Visualization for AutoComplete](http://54.215.248.45/autocomplete)| [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/AutoComplete) |
+| PageRank |[Visualization for PageRank](http://54.215.248.45/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
 | Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/RecommenderSystem)|
+
+### Project0: NYC Taxi
+
+
+
+###### Link to Data source
+```
+http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+```
+
 
 ### Project1: AutoComplete
 
@@ -36,6 +46,7 @@ http://socialcomputing.asu.edu/datasets/Twitter
 
 1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 480k users, 17k movies and over 100 million ratings.
 2. Merged the two matrices using a Item-based collaborative filtering algorithm to compute the movie recommendation list and deployed the jobs on AWS Hadoop cluster.
+
 ###### Link to Data source
 ```
 http://academictorrents.com/details/9b13183dc4d60676b773c9e2cd6de5e5542cee9a
