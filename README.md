@@ -8,6 +8,7 @@
 | PageRank |[Visualization for PageRank](http://54.215.248.45/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
 | Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/RecommenderSystem)|
 | NYC Taxi | Visualization for NYCTaxi | Private|
+
 ### Project0: NYC Taxi
 
 
