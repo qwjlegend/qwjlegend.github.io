@@ -4,13 +4,22 @@
 
 | Project | Link | Code |
 |-|-|-|
-| AutoComplete | [Visualization for AutoComplete](http://54.215.248.45/autocomplete)| [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/AutoComplete) |
-| PageRank |[Visualization for PageRank](http://54.215.248.45/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
+| NYC Taxi | [Visualization for NYCTaxi](http://web.qwjlegend.com:5006/taxi) | Private|
+| AutoComplete | [Visualization for AutoComplete](http://web.qwjlegend.com/autocomplete/index.php)| [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/AutoComplete) |
+| PageRank |[Visualization for PageRank](http://web.qwjlegend.com/pagerank_search) | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/PageRank) |
 | Movie Recommendation |  | [Github Link](https://github.com/qwjlegend/qwjlegend.github.io/tree/master/RecommenderSystem)|
-| NYC Taxi | Visualization for NYCTaxi | Private|
 
-### Project0: NYC Taxi
 
+### Project1: NYC Taxi
+
+###### Description
+
+1. Cleaned and filtered 1.2 Billion NYC Taxi Trip Data (300GB) and stored them in S3 buckets.
+2. Built and configured data pipeline based on AWS resources automatically byTerraform and Ansible.
+3. Designed a MapReduce program and deployed it on an auto scaling group of EC2 instances to generate the statistics of the taxi trip data.
+4. Scheduled and tracked tasks on each node by SQS, where each task read the input by date range.
+5. Built a Docker image of the MapReduce program and pushed it to ECS repository as an alternative to facilitate the scaling out process and compared the latencies.
+6. Aggregated and stored the output of reducer into DynamoDB and used it as the data source for Bokeh visualization.
 
 
 ###### Link to Data source
@@ -19,7 +28,7 @@ http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 ```
 
 
-### Project1: AutoComplete
+### Project2: AutoComplete
 
 
 ###### Description
@@ -30,7 +39,7 @@ http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 
 
 
-### Project2: PageRank
+### Project3: PageRank
 ###### Description
 
 1. Implemented a page rank algorithm based on Twitter social network data sets with 11.3 million user profiles and 85 million social relations. 
@@ -42,7 +51,8 @@ http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 ```
 http://socialcomputing.asu.edu/datasets/Twitter
 ```
-### Project3: Movie Recommendation System
+
+### Project4: Movie Recommendation System
 ###### Description
 
 1. Formulated a user rating matrix and a Co-concurrence matrix based on Netflix raw data set with 480k users, 17k movies and over 100 million ratings.
